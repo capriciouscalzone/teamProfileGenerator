@@ -62,23 +62,23 @@ function createEngineer() {
         .prompt([
             {
                 type: 'input',
-                name: 'EngineerName',
+                name: 'engineerName',
                 message: 'What is the team engineer name?',
 
             },
             {
                 type: 'input',
-                name: 'EngineerID',
+                name: 'engineerID',
                 message: 'What is the engineer\'s id?',
             },
             {
                 type: 'input',
-                name: 'EngineerEmail',
+                name: 'engineerEmail',
                 message: 'What is the engineer\'s email?',
             },
             {
                 type: 'input',
-                name: 'EngineerGitHub',
+                name: 'engineerGitHub',
                 message: 'What is the engineer\'s GitHub?',
             }
         ])
@@ -90,23 +90,23 @@ function createIntern() {
         .prompt([
             {
                 type: 'input',
-                name: 'InternName',
+                name: 'internName',
                 message: 'What is the team intern\'s name?',
 
             },
             {
                 type: 'input',
-                name: 'InternID',
+                name: 'internID',
                 message: 'What is the intern\'s id?',
             },
             {
                 type: 'input',
-                name: 'InternEmail',
+                name: 'internEmail',
                 message: 'What is the intern\'s email?',
             },
             {
                 type: 'input',
-                name: 'InternSchool',
+                name: 'school',
                 message: 'What is the intern\'s school?',
             }
         ])
@@ -139,12 +139,12 @@ function createTeam(){
                 break;
             case 'Intern':
                 createIntern().then(answers => {
-                    const { internName, internID, internEmail, internSchool } = answers;
+                    const { internName, internID, internEmail, school } = answers;
                     const intern = new Intern(
                         internName,
                         internID,
                         internEmail,
-                        internSchool
+                        school
             
                     )
                     team.push(intern);

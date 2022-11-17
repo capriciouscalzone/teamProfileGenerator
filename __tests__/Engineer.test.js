@@ -33,8 +33,8 @@ test('Can get name from getId() method', () =>{
 });
 
 test('Can get name from getGitHub() method', () =>{
-    const engineer = new Engineer("Mike", 12, undefined);
-    expect(engineer.getGitHub()).toBe(undefined);
+    const engineer = new Engineer("Mike", 12, "mike@gmail.com", "capriciouscalzone");
+    expect(engineer.getGitHub()).toBe("capriciouscalzone");
 });
 
 test('Can get name from getRole() method', () =>{

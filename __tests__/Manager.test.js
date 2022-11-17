@@ -33,12 +33,12 @@ test('Can get name from getId() method', () =>{
 });
 
 test('Can get name from getOfficeNumber() method', () =>{
-    const manager = new Manager("Mike", 12, undefined);
-    expect(manager.getOfficeNumber()).toBe(undefined);
+    const manager = new Manager("Mike", 12, "mike@gmail.com", 250);
+    expect(manager.getOfficeNumber()).toBe(250);
 });
 
 test('Can get name from getRole() method', () =>{
-    const manager = new Manager("Mike", 12, "mike@email.com", "Manager");
+    const manager = new Manager("Mike", 12, "mike@email.com", 250, "Manager");
     expect(manager.getRole()).toBe("Manager");
 });
 
