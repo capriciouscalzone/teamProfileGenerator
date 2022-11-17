@@ -17,14 +17,30 @@ test('Can set employee_id in employee object', () => {
 });
 
 test('Can set email in employee object', () => {
-    const employee = new Employee("Mike", 12, "mike@email.com");
-    expect(employee.email).toBe("mike@email.com");
+    const employee = new Employee("Mike", 12, "mike@gmail.com");
+    expect(employee.email).toBe("mike@gmail.com");
 
 });
 
 test('Can get name from getName() method', () =>{
-    const employee = new Employee("Mike", 12, "mike@email.com");
+    const employee = new Employee("Mike");
     expect(employee.getName()).toBe("Mike");
 });
+
+test('Can get name from getId() method', () =>{
+    const employee = new Employee("Mike", 12);
+    expect(employee.getId()).toBe(12);
+});
+
+test('Can get name from getEmail() method', () =>{
+    const employee = new Employee("Mike", 12, "mike@gmail.com");
+    expect(employee.getEmail()).toBe("mike@gmail.com");
+});
+
+test('Can get name from getRole() method', () =>{
+    const employee = new Employee("Mike", 12, "mike@gmail.com", "Employee");
+    expect(employee.getRole()).toBe("Employee");
+});
+
 
 
