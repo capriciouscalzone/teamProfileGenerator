@@ -2,9 +2,6 @@
   "devDependencies": {
     "jest": "^29.3.1"
   },
-  "dependencies": {
-    "inquirer": "^8.2.4"
-  },
   "name": "teamprofilegenerator",
   "description": "A CLI that creates a webpage listing off team members",
   "version": "1.0.0",
@@ -26,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/capriciouscalzone/teamProfileGenerator/issues"
   },
-  "homepage": "https://github.com/capriciouscalzone/teamProfileGenerator#readme"
+  "homepage": "https://github.com/capriciouscalzone/teamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
